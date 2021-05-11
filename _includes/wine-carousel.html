@@ -1,0 +1,111 @@
+<section id="wine-detail">
+	{% include nav.html %}
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2 col-md-2"></div>
+			<div class="col-lg-8 col-md-8">
+				<h1>Our Wines</h1>
+			</div>
+			<div class="col-lg-12 col-md-12">
+				<div class="carousel slide" data-ride="carousel" id="wine-carousel" data-interval="false">
+<!-- 					<ol class="carousel-indicators">
+						<li data-target="#wine-carousel" data-slide-to="0" class="active"></li>
+						<li data-target="#wine-carousel" data-slide-to="1"></li>
+						<li data-target="#wine-carousel" data-slide-to="2"></li>
+					</ol> -->
+					<div class="row">
+						<div class="wine-control col-lg-2 col-md-2">
+							<a class="carousel-control-prev" href="#wine-carousel" data-slide="prev">
+								<span class="carousel-control-prev-icon">SEE PREV</span>
+							</a>
+						</div>
+						<div class="col-lg-8 col-md-8">
+							<div class="wine-desc carousel-inner">
+								<div class="item active">
+									<div class="row">
+										<div class="col-lg-9 col-md-9">
+											<h1>Pomerol</h1>
+											<p>Pomerol lies immediately to the east and north-east of Libourne. It is the smallest of all the major Bordeaux wine producing appellations, with only 800 hectares under vine in Pomerol. This miniscule area’s wines define the Merlot grape at its very best. The soils of the Pomerol region are very diverse with a mixture of gravel, sand and clay scattered across the plateau. Pomerol wines are known to be of maximum elegance, richness, and complexity.</p>
+											<a href="{{ site.baseurl }}assets/LesTrois-AOCPomerol.pdf" target="_blank">DOWNLOAD BROCHURE</a>
+										</div>
+										<div class="col-lg-3 col-md-3">
+											<img src="{{ site.baseurl }}img/blackbottle.png" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="row">
+										<div class="col-lg-9 col-md-9">
+											<h1>Fronsac</h1>
+											<p>Like Saint-Emilion, just a few miles to the east, Fronsac has a picturesque landscape made up of woodland and hills. The composition of the soil here gives the vines a certain resistance to hotter weather. Merlot is the dominant grape in Fronsac and is regularly paired with Cabernet Franc. Malbec is used to add complexity to the wines. Fronsac is well-known for producing serious, ageworthy and great value wines.</p>
+											<a href="{{ site.baseurl }}assets/LesTrois-AOCFronsac.pdf" target="_blank">DOWNLOAD BROCHURE</a>
+										</div>
+										<div class="col-lg-3 col-md-3">
+											<img src="{{ site.baseurl }}img/redbottle.png" alt="">
+										</div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="row">
+										<div class="col-lg-9 col-md-9">
+											<h2>Lussac-Saint-Émilion</h2>
+											<p>Located on the right bank of the Garonne and Dordogne rivers, the amphi-theater shaped Lussac Saint-Émilion facing south equips its vineyards with naturally good drainage and plenty of sunlight. The terroir of Lussac is characterized by the diversity of its soils, distributed between the plateaus, the sides of the hills, and small valleys, the vines grow in mainly clayey limestone soils. The Lussac wines express delicious, intense aromas with notes of red fruit and underlying hints of liquorice, prune and spice.</p>
+											<a href="{{ site.baseurl }}assets/LesTrois-AOCLussacSaintEmilion.pdf" target="_blank">DOWNLOAD BROCHURE</a>
+										</div>
+										<div class="col-lg-3 col-md-3">
+											<img src="{{ site.baseurl }}img/goldbottle.png" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="row">
+										<div class="col-lg-9 col-md-9">
+											<h1>Médoc</h1>
+											<p>Médoc is one of the key appellations in the left bank of Bordeaux. It has an alluvial soil composition of mainly sand, clay and gravel, it became a unique terrain in the Left Bank. Facing due south, it enjoys outstanding exposure to the sun, providing ideal conditions for the grapes to ripen. Wines here are delicate, they deliver fruit scents and flavors of cassis, blackberry, dark cherry, vanilla, coffee bean, spice and licorice; often tannic when young, harmonious and splendid when matured.</p>
+											<a href="{{ site.baseurl }}assets/LesTrois-AOCMedoc.pdf" target="_blank">DOWNLOAD BROCHURE</a>
+										</div>
+										<div class="col-lg-3 col-md-3">
+											<img src="{{ site.baseurl }}img/greenbluebottle.png" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="row">
+										<div class="col-lg-9 col-md-9">
+											<h1>Bordeaux</h1>
+											<p>The Bordeaux appellation covers the entire Bordeaux wine region, a very large geographical area with a wide variety of soils and terroirs. In the right hands, wines can be excellent values with good flavour structure. Bordeaux reds are known for offering a palette of infinite nuances and able to combine their virtues in many ways.</p>
+											<a href="{{ site.baseurl }}assets/LesTrois-AOCBordeaux.pdf" target="_blank">DOWNLOAD BROCHURE</a>
+										</div>
+										<div class="col-lg-3 col-md-3">
+											<img src="{{ site.baseurl }}img/whitebottle.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="wine-control col-lg-2 col-md-2">
+							<a class="carousel-control-next" href="#wine-carousel" data-slide="next">
+								<span class="carousel-control-next-icon">SEE NEXT</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<script>
+    (function () {
+        function getSlideParameter(key) {
+            key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+            var match = location.search.match(new RegExp("[?&]" + key + "=([^&]+)(&|$)"));
+            var slide = match && decodeURIComponent(match[1].replace(/\+/g, " "));
+            if (Math.floor(slide) == slide && $.isNumeric(slide))
+                return parseInt(slide);
+            else
+                return 0;//if 'slide' parameter is not present or doesn't have correct values load 0th slide
+        }
+        $('#wine-carousel').carousel(getSlideParameter('slide'));
+    })();
+</script>

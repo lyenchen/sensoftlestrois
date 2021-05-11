@@ -1,0 +1,38 @@
+
+toc:
+  - title: Vineyard
+    subfolderitems:
+      - page: The Appellation
+        url: vineyard.html#appellation
+      - page: The Vineyard
+        url: vineyard.html#vineyard
+      - page: The Viticulture
+        url: vineyard.html#viticulture
+      - page: The Grapes
+        url: vineyard.html#grapes
+  - title: Vinification
+    subfolderitems:
+      - page: The Vinification
+        url: vinification.html#vinification
+      - page: The Wooden Vats
+        url: vinification.html#woodenvats
+      - page: Oak Barrels
+        url: vinification.html#oakbarrels
+  - title: Le Vignoble
+    subfolderitems:
+      - page: L’Appellation
+        url: fr/vineyard.html#appellation
+      - page: Le Vignoble
+        url: fr/vineyard.html#vineyard
+      - page: La Viticulture
+        url: fr/vineyard.html#viticulture
+      - page: Les Cépages
+        url: fr/vineyard.html#grapes
+  - title: La Vinification
+    subfolderitems:
+      - page: La Vinification
+        url: fr/vinification.html#vinification
+      - page: Les cuves en bois
+        url: fr/vinification.html#woodenvats
+      - page: Les fûts de chêne
+        url: fr/vinification.html#oakbarrels
